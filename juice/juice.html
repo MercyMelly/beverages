@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice</title>
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="stylesheet" href="juice.css">
+    <script src="/store.js" async></script>
+</head>
+<body>
+    <div class="background_image"></div>
+    <header class="main_header">   
+        <nav class="main_nav">
+            <ul class="main_nav_items">
+                <li class="main_nav_item">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="juice">
+            <h1 class="section-title">Juices</h1>
+            <div class="product_list">
+                <article class="product orangeright">
+                    <h1 class="product_title">Fresh Orange Juice</h1>
+                    <h3>Price: Ksh 100</h3>
+                    <p><strong>Ingredients:</strong> Fresh Oranges, Ice</p>
+                    <p>Freshly squeezed orange juice with no added sugars. The ultimate citrus refreshment!</p>
+                    <div>
+                        <button onclick="addToCart('Fresh Orange Juice', 100)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product greenleft">
+                    <h1 class="product_title">Green Detox Juice</h1>
+                    <h3>Price: Ksh 500</h3>
+                    <p><strong>Ingredients:</strong> Spinach, Cucumber, Green Apple, Lemon, Ginger</p>
+                    <p>A health-packed juice designed to detoxify and energize. Fresh, tangy, and packed with green goodness!</p>
+                    <div>
+                        <button onclick="addToCart('Green Detox Juice', 500)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product pineappleright" >
+                    <h1 class="product_title">Tropical Pineapple Juice</h1>
+                    <h3>Price: Ksh 340</h3>
+                    <p><strong>Ingredients:</strong> Pineapple, Coconut Water, Lime</p>
+                    <p>A tropical blend of pineapple, coconut water, and lime. Refreshing and sweet!</p>
+                    <div>
+                        <button onclick="addToCart('Tropical Pineapple Juice', 340)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product carrotleft">
+                    <h1 class="product_title">Carrot Ginger Juice</h1>
+                    <h3>Price: Ksh 400</h3>
+                    <p><strong>Ingredients:</strong> Carrots, Ginger, Orange Juice</p>
+                    <p>A refreshing juice made from fresh carrots and a kick of ginger. Gives you an extra boost of energy!</p>
+                    <div>
+                        <button onclick="addToCart('Carrot Ginger Juice', 400)" class="add_to_cart">Add to Cart</button>
+                       
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="cart_section">
+            <h2 class="cart_item_title">Cart</h2>
+            <div id="cart"></div>
+            <div class="cart_total">
+                <strong>Total: </strong><span id="cart_total_price">KSH 0</span>
+            </div>
+            <button onclick="checkout()" class="btn_purchase">Checkout</button>
+        </section>
+       
+    </main>
+</body>
+<footer class="main_footer">
+    <nav>
+        <ul class="main_footer_links">
+            <li class="main_footer_link">
+                <a href="#">Copyrights</a>
+            </li>
+            <li class="main_footer_link">
+                <a href="#">About us</a>
+
+</footer>
+</html>

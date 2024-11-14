@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#contact-info {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+#contact-info h1{
+    margin-top: 15px;
+    text-align: center;
+}
+h1, h2 {
+    color: #2ddf5c;
+}
+
+p{
+font-size: 19px;
+}
+.follow{
+    text-align: center;
+}
+
+.contact-details{
+    margin-top: 10px;
+}
+
+.main_footer{
+    margin-bottom: 20px;
+}

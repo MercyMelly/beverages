@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="stylesheet" href="cake.css">
+    <script src="/store.js" async></script>
+</head>
+<body>
+    <header class="main_header">   
+        <nav class="main_nav">
+            <ul class="main_nav_items">
+                <li class="main_nav_item">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background_image">background image</div>
+        <section id="cakes">
+            <h1 class="section-title">Cakes</h1>
+            <div class="product_list">
+                <article class="product chocolateright">
+                    <h1 class="product_title">Chocolate Lava Cake</h1>
+                    <h3>Price: KSH 500</h3>
+                    <p><strong>Ingredients:</strong> Dark Chocolate, Butter, Sugar, Eggs, Vanilla Extract, Flour</p>
+                    <p>A warm, gooey chocolate cake with a molten center. A chocolate lover's dream!</p>
+                    <div>
+                        <button onclick="addToCart('Chocolate Lava Cake', 500)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product carrotleft">
+                    <h1 class="product_title">Carrot Cake with Cream Cheese Frosting</h1>
+                    <h3>Price:KSH 900</h3>
+                    <p><strong>Ingredients:</strong> Carrots, Flour, Sugar, Eggs, Cinnamon, Cream Cheese, Powdered Sugar</p>
+                    <p>A moist carrot cake topped with tangy cream cheese frosting. A perfect balance of flavors!</p>
+                    <div>
+                        <button onclick="addToCart('Carrot Cake with Cream Cheese Frosting', 900)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product lemonright">
+                    <h1 class="product_title">Lemon Blueberry Cake</h1>
+                    <h3>Price:KSH 1250</h3>
+                    <p><strong>Ingredients:</strong> Blueberries, Lemon Zest, Flour, Eggs, Sugar, Butter</p>
+                    <p>A light and fluffy cake with the tanginess of lemon and the sweetness of blueberries. Refreshing and delightful!</p>
+                    <div>
+                        <button onclick="addToCart('Lemon Blueberry Cake', 1250)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="cart_section">
+            <h2 class="cart_item_title">Cart</h2>
+            <div id="cart"></div>
+            <div class="cart_total">
+                <strong>Total: </strong><span id="cart_total_price">KSH 0</span>
+            </div>
+            <button onclick="checkout()" class="btn_purchase">Checkout</button>
+        </section>               
+                   
+    </main>
+    
+</body>
+<footer class="main_footer">
+    <nav>
+        <ul class="main_footer_links">
+            <li class="main_footer_link">
+                <a href="#">Copyrights</a>
+            </li>
+            <li class="main_footer_link">
+                <a href="#">About us</a>
+
+</footer>
+</html>

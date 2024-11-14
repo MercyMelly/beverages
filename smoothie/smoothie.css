@@ -1,0 +1,123 @@
+
+* {
+    margin: 10;
+    box-sizing: border-box;
+}
+
+.background_image{  
+    background: url("/images/smoothie\ bg.jpg"),center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #2ddf5c;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+
+.product {
+    background: #ffffff;    
+    border: 2px solid #2ddf5c;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* the add to cart button */
+    /* display: flex; 
+    flex-direction: column; 
+    align-items: center;  */
+    
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product_title {
+    font-size: 27px;
+    color: #4CAF50;
+    margin-bottom: 0;
+}
+
+h3 {
+    /* color: #ce380b; */
+    color: #ca05ca;
+    margin-bottom: 8px;
+}
+
+.product p {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.add_to_cart{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #2ddf5c;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.add_to_cart:hover{
+    background-color: whitesmoke;
+}
+.cart_item{
+    width: 45%;
+}
+.cart_item_title{
+    color: #020202;
+    margin-left: 5px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    
+}
+.cart_total{
+    margin-top: 10px;
+    margin-right: 10px;
+    display: block;
+    text-align: center;
+}
+
+.btn_purchase{
+    display:block;
+    margin: 40px auto 80px auto;
+    font-size: 20px;
+    background: #2ddf5c;
+    border-radius: 3px;
+}
+
+.btn_purchase:hover{
+    background: white;
+}

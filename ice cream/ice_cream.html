@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="stylesheet" href="ice_cream.css">
+    <script src="/store.js" async></script>
+</head>
+<body>
+    <header class="main_header">   
+        <nav class="main_nav">
+            <ul class="main_nav_items">
+                <li class="main_nav_item">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background_image">background_image</div>
+        <section id="ice-cream">
+            <h1 class="section-title">Ice Cream</h1>
+            <div class="product_list">
+                <article class="product">
+                    <h1 class="product_title">Vanilla Bean Ice Cream</h1>
+                    <h3>Price: Ksh 400</h3>
+                    <p><strong>Ingredients:</strong> Vanilla Beans, Milk, Sugar, Egg Yolks, Cream</p>
+                    <p>A classic flavor made with real vanilla beans for an authentic and rich taste. Smooth and creamy!</p>
+                    <div>
+                        <button onclick="addToCart('Vanilla Bean Ice Cream', 400)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product">
+                    <h1 class="product_title">Chocolate Fudge Brownie Ice Cream</h1>
+                    <h3>Price: Ksh 700</h3>
+                    <p><strong>Ingredients:</strong> Chocolate Fudge, Brownie Chunks, Cream, Milk, Sugar</p>
+                    <p>A decadent chocolate ice cream filled with chunks of gooey brownies and swirls of fudge. Every bite is a chocolate lover's fantasy!</p>
+                    <div>
+                        <button onclick="addToCart('Chocolate Fudge Brownie Ice Cream', 700)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product">
+                    <h1 class="product_title">Strawberry Cheesecake Ice Cream</h1>
+                    <h3>Price: Ksh 550</h3>
+                    <p><strong>Ingredients:</strong> Fresh Strawberries, Cream Cheese, Graham Cracker Crumbs, Milk, Sugar</p>
+                    <p>A creamy ice cream with the flavor of cheesecake and fresh strawberry swirl. Refreshing and indulgent!</p>
+                    <div>
+                        <button onclick="addToCart('Strawberry Cheesecake Ice Cream', 550)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="cart_section">
+            <h2 class="cart_item_title">Cart</h2>
+            <div id="cart"></div>
+            <div class="cart_total">
+                <strong>Total: </strong><span id="cart_total_price">KSH 0</span>
+            </div>
+            <button onclick="checkout()" class="btn_purchase">Checkout</button>
+        </section>      
+            
+    </main>
+</body>
+<footer class="main_footer">
+    <nav>
+        <ul class="main_footer_links">
+            <li class="main_footer_link">
+                <a href="#">Copyrights</a>
+            </li>
+            <li class="main_footer_link">
+                <a href="#">About us</a>
+
+</footer>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie</title>
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="stylesheet" href="smoothie.css">
+    <script src="/store.js" async></script>
+</head>
+<body>
+    <header class="main_header">   
+        <nav class="main_nav">
+            <ul class="main_nav_items">
+                <li class="main_nav_item">
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li class="main_nav_item">
+                    <a href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background_image">background_image</div>
+        <section id="smoothies">
+            <h1 class="section-title">Smoothies</h1>
+            <div class="product_list">
+                <article class="product">
+                    <h1 class="product_title">Tropical Bliss Smoothie</h1>
+                    <h3>Price: KSH 200</h3>
+                    <p><strong>Ingredients:</strong> Mango, Pineapple, Coconut Milk, Ice</p>
+                    <p>A refreshing tropical blend that combines the sweetness of mango and pineapple with the creamy richness of coconut milk.</p>
+                    <div>
+                        <button onclick="addToCart('Tropical Bliss Smoothie', 200)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product">
+                    <h1 class="product_title">Berry Fusion Smoothie</h1>
+                    <h3>Price: KSH 500</h3>
+                    <p><strong>Ingredients:</strong> Strawberries, Blueberries, Banana, Almond Milk</p>
+                    <p>A delicious mix of fresh berries and banana, blended with almond milk for a creamy, dairy-free option.</p><br>
+                    <div>
+                        <button onclick="addToCart('Berry Fusion Smoothie', 500)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+    
+                <article class="product">
+                    <h1 class="product_title">Green Power Smoothie</h1>
+                    <h3>Price: KSH 350</h3>
+                    <p><strong>Ingredients:</strong> Spinach, Kale, Banana, Apple, Chia Seeds, Coconut Water</p>
+                    <p>Packed with nutrients, this green smoothie gives you a power boost. Perfect for a healthy start to your day or post-workout refuel!</p>
+                    <div>
+                        <button onclick="addToCart('Green Power Smoothie', 350)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                    
+                </article>
+    
+                <article class="product">
+                    <h1 class="product_title">Chocolate Peanut Butter Smoothie</h1>
+                    <h3>Price: KSH 660</h3>
+                    <p><strong>Ingredients:</strong> Peanut Butter, Banana, Cocoa Powder, Almond Milk, Honey</p>
+                    <p>A rich and creamy smoothie that combines the indulgence of chocolate and peanut butter with the health benefits of bananas.</p>
+                    <div>
+                        <button onclick="addToCart('Chocolate Peanut Butter Smoothie', 660)" class="add_to_cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Cart Section -->
+        <section id="cart_section">
+            <h2 class="cart_item_title">Cart</h2>
+            <div id="cart"></div>
+            <div class="cart_total">
+                <strong>Total: </strong><span id="cart_total_price">KSH 0</span>
+            </div>
+            <button onclick="checkout()" class="btn_purchase">Checkout</button>
+        </section>
+    </main>   
+</body>
+<footer class="main_footer">
+    <nav>
+        <ul class="main_footer_links">
+            <li class="main_footer_link">
+                <a href="#">Copyrights</a>
+            </li>
+            <li class="main_footer_link">
+                <a href="#">About us</a>
+
+</footer>
+</html>
+
+
+
+
